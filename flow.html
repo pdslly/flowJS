@@ -10,6 +10,7 @@
 		var foo = flowJS({
 			init: function( flow ){
 				flow.nextStep( this.step1, this.step2, ' world' )
+					 .nextStep( this.step1, this.error, ' aaa')
 				console.log(`初始化flow, 传值-world, 3000ms后执行下一步....`)
 				setTimeout(function(){
 				       flow.resolve('hello')//改变状态为RESOLVE传值

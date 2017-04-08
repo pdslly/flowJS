@@ -82,6 +82,7 @@
                                 rejectFn ? rejectFn.apply(this.$opt, [].concat(this, this.$data, args)) : this.reject(this.$data)
                           }
       	}
+                   return this;
             },
             getData: function(key){
       	if(key){
